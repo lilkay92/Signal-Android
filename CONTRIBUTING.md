@@ -15,10 +15,11 @@ Truths which we believe to be self-evident:
 1. **There is no such thing as time.**  Protocol ideas that require synchronized clocks are doomed to failure.
 
 
-## Translations
+## Building
 
-Thanks to a dedicated community of volunteer translators, Signal is now available in more than one hundred languages. We use Transifex to manage our translation efforts, not GitHub. Any suggestions, corrections, or new translations should be submitted to the [Signal localization project for Android](https://www.transifex.com/projects/p/signal-android/).
-
+1. You'll need to get the `libwebp` submodule after checking out the repository with `git submodule init && git submodule update`
+1. Most things are pretty straightforward, and opening the project in Android Studio should get you most of the way there.
+1. Depending on your configuration, you'll also likely need to install additional SDK Tool components, namely the versions of NDK and CMake we are currently using in our [Docker](https://github.com/signalapp/Signal-Android/blob/main/reproducible-builds/Dockerfile#L30) configuration.
 
 ## Issues
 
@@ -75,15 +76,11 @@ There are several other ways to get involved:
   * Redirect support questions to support@signal.org and the [Signal Support Center](https://support.signal.org/).
   * Redirect non-bug discussions to the [community forum](https://community.signalusers.org).
 * Improve documentation in the [wiki](https://github.com/signalapp/Signal-Android/wiki).
-* Join the community of volunteer translators on Transifex:
-  * [Android](https://www.transifex.com/projects/p/signal-android/)
-  * [iOS](https://www.transifex.com/open-whisper-systems/signal-ios/)
-  * [Desktop](https://www.transifex.com/projects/p/signal-desktop/)
 * Find and mark duplicate issues.
 * Try to reproduce issues and help with troubleshooting.
 * Discover solutions to open issues and post any relevant findings.
 * Test other people's pull requests.
-* Contribute to Signal via the [Freedom of the Press Foundation's donation page](https://freedom.press/crowdfunding/signal/).
+* [Donate to Signal.](https://signal.org/donate/)
 * Share Signal with your friends and family.
 
 Signal is made for you. Thank you for your feedback and support.
